@@ -1,10 +1,8 @@
 // 1. Функция которая выводит наибольшее число.
 function getMaxDigit(number){
-    const arr = number.toString().split("");
+  const arr = number.toString().split("");
     return Math.max(...arr);
 }
- 
-
 // 2. Функция которая приводит число в степень 
 function specifyPower(number , power){
     let result = 1;
@@ -31,8 +29,8 @@ function calculateSumAfterTax(salary, tax1, tax2){
 }
 
 // 5.Функция которая возвращает случайное число в диапазоне от N до M
-function getRandomInteger(N, M) {
-    let integer = Math.round(Math.random() * (M - N)) + N;
+function getRandomInteger(fromNumber, toNumber) {
+    let integer = Math.round(Math.random() * (toNumber - fromNumber)) + fromNumber;
     return integer;
   }
 
@@ -106,14 +104,14 @@ function deleteDuplicateLetter(str) {
 document.write('<pre>');
 
 document.writeln(`
-Функция1: ${getMaxDigit(+prompt("Enter number, in which our function will find max-number!"))}
-Функция2: ${specifyPower((+prompt("Enter number, and then...")),(+prompt("enter it's power!")))}
+Функция1: ${getMaxDigit(1654987)}
+Функция2: ${specifyPower(8,5)}
 Функция3: ${capitalizeFirstLetter('mYkhaiLo')}
-Функция4: ${calculateSumAfterTax((+prompt("Enter your salary")),(+prompt("Enter Tax1 from your salary!")),(+prompt("Enter Tax2 from your salary!")))}
-Функция5: ${getRandomInteger((+prompt("Enter integer N")),(+prompt("Enter integer M")))}
+Функция4: ${calculateSumAfterTax(10000,17,3)}
+Функция5: ${getRandomInteger(1,9)}
 Функция6: ${countLetter('qweqweQQQqfqpokdf','q')}
 Функция7: ${convertCurrency('155$')}, ${convertCurrency('36570UaH')}, ${convertCurrency('1000€')}
-Функция8: ${randomPassword(+prompt("Enter number  which is equal to your random passLenght"))}
+Функция8: ${randomPassword(11)}
 Функция9: ${deleteLetter("AbracadabrA", "a")}
 Функция10: ${isPalyndrom('Мадам')}, ${isPalyndrom('кокос')}, ${isPalyndrom('Я несу гусеня')}
 Функция11: ${deleteDuplicateLetter('Бісквіт був дуже ніжним')}
