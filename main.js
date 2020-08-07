@@ -6,11 +6,7 @@ function getMaxDigit(number){
 // 2. Функция которая приводит число в степень 
 function specifyPower(number , power){
     let result = 1;
-    for (
-        let i = 0;
-        i < power;
-        i++
-    ){
+    for (let i = 0;i < power;i++){
         result = result * number;
     }
     return result;
